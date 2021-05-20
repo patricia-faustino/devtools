@@ -1,6 +1,8 @@
 (function(){
 	"use strict"
 
+	let usuario = "nome.teste@teste.com";
+
 	$.getJSON(
 		"https://ceep.herokuapp.com/cartoes/carregar",
 		{usuario: usuario},

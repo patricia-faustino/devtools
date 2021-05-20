@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E8E8E8;
+}
+
+.container {
+	padding: 0 10%;
+}
+
+.cabecalho {
+  background: #0082C7;
+}
+
+#mudaLayout {
+  display: none;
+}
+
+@media (min-width: 610px){
+
+	#mudaLayout{
+		display: inline-block;
+	}
+
+}

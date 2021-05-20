@@ -1,0 +1,64 @@
+.cartao {
+	margin: 32px 16px;
+  padding: 16px;
+	line-height: 1.5;
+	position: relative;
+	word-wrap: break-word;
+	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+	background: #EBEF40;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+	transition: transform .2s ease-in;
+}
+
+.cartao--some {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.cartao:focus,
+.cartao:hover {
+	outline: none;
+	transform: scale(1.1);
+}
+
+.cartao .opcoesDoCartao-opcao {
+	opacity: 0;
+	transition: opacity .2s ease;
+}
+
+.cartao:hover .opcoesDoCartao-opcao,
+.cartao:focus .opcoesDoCartao-opcao,
+.cartao .opcoesDoCartao:focus .opcoesDoCartao-opcao,
+.cartao .opcoesDoCartao-opcao:focus {
+	opacity: 1;
+}
+
+@media (min-width: 560px){
+
+	.cartao {
+		flex-grow: 1;
+		display: inline-block;
+		text-align: left;
+		box-sizing: border-box;
+		vertical-align: top;
+	}
+
+	.cartao--textoPequeno {
+		font-size: 1em;
+		width: 11em;
+		flex-basis: 11em;
+	}
+
+	.cartao--textoMedio {
+		font-size: 1.5em;
+		width: 9em;
+		flex-basis: 9em;
+	}
+
+	.cartao--textoGrande {
+		font-size: 2em;
+		width: 6em;
+		flex-basis: 6em;
+	}
+
+}
